@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/components/topbar/topbar.scss"],"names":[],"mappings":"AAAA,QACE,UAAA,CACA,WAAA,CACA,wBAAA,CACA,UAAA","file":"main.ef6088db.chunk.css","sourcesContent":[".topbar{\n  width: 100%;\n  height: 70px;\n  background-color: #15023a;\n  color: white;\n}\n"]}
