@@ -1,7 +1,19 @@
 import './intro.scss'
 import { FaChevronDown } from 'react-icons/fa';
+import { init } from 'ityped'
+import { useEffect, useRef } from 'react';
 
 export default function Intro() {
+  const textRef = useRef();
+  useEffect(() => {
+    console.log(textRef)
+    init(textRef.current, {
+      showCursor: false,
+      backDelay: 1500,
+      strings: ['Queso', 'Mantequilla de Maní', 'Jalea', 'Doble Cola' ]
+    })
+
+  }, [])
   return (
     <div className="intro" id="intro">
       <div className="left">
@@ -13,7 +25,7 @@ export default function Intro() {
         <div className="wrapper">
           <h2>Hi there, I'm</h2>
           <h1>Francisco Dumont</h1>
-          <h3>Freelance</h3>
+          <h3>I like <span ref={textRef}></span></h3>
         </div>
 
         <h1>
